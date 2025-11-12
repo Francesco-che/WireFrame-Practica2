@@ -1,0 +1,22 @@
+.encabezado_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: white;
+}
+.encabezado_section img{
+    width: 10%;
+    padding-left: 5%;
+}
+.encabezado_section div{
+    width: 20%;
+}
+.encabezado_section a{
+    padding-left: 10%;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
