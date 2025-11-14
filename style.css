@@ -1,3 +1,6 @@
+body {
+    font-family: sans-serif;
+}
 .encabezado_section {
     display: flex;
     justify-content: space-between;
@@ -7,7 +10,7 @@
     background-color: white;
 }
 .encabezado_section img{
-    width: 10%;
+    width: 120px;
     padding-left: 5%;
 }
 .encabezado_section div{
@@ -21,9 +24,9 @@
     font-size: 18px;
 }
 .text_with_image{
-    width: 100%;
-    height: 400px;
-    background: url(img/background4.jpg);
+    width: 95%;
+    height: 500px;
+    background: url(img/background6.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -55,21 +58,55 @@
     color: black;
 }
 .blue_section {
-    width: 100%;
+    width: 92.5%;
     height: auto;
-    padding: 3%;
+    padding: 4%;
     background-color: #c6dcff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: sans-serif;
 }
-.blue_section_image {
+.blue_section_image_img {
     width: 80%;
+}
+.blue_section_text{
+    padding-right: 15%;
 }
 .blue_section_text h2 {
     font-size: 40px;
 }
 .blue_section_text h3 {
     font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.blue_section_image {
+    max-height: 20%;
+}
+.purple_section{
+    width: 90.5%;
+    height: 1000px;
+    background-color: #dedaff;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.purple_section_imgs{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: space-around;
+}
+.purple_section_table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80% auto;
+    font-size: 30px;
+    padding: 3%;
+}
+.purple_section_table table{
+    width: 80%;
+    line-height: 40px;
 }
