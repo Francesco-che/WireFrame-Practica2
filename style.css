@@ -141,21 +141,39 @@ body {
 }
 .green_section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     background-color: #adf0c7;
     width: 100%;
+    height: auto;
 }
-.green_section_form input{
+.green_section_form {
+    width: 100%;
+}
+.green_section_form input {
+    border: solid black;
+    border-radius: 5px;
+    padding: 5%;
+}
+.green_section_form ::placeholder {
+    font-size: 25px;
+}
+.green_section_form label {
+    font-size: 25px;
+    padding-top: 2%;
+}
+.green_section_form textarea {
     border: solid black;
     border-radius: 5px;
     padding: 5%;
 }
 .green_section_form{
+    display: flex;
     padding: 2%;
     width: 80%;
+    gap: 5%;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 5% auto;
 }
 .green_section_form_name {
     display: flex;
@@ -169,7 +187,9 @@ body {
     flex-direction: column;
     width: 40%;
     font-size: 20px;
-
+}
+.green_section_form_email input{
+    border: solid #ff9c57;
 }
 .green_section_form_rol {
     display: flex;
@@ -177,9 +197,12 @@ body {
     width: 40%;
     font-size: 20px;    
 }
-.green_section_form_message{
+.green_section_form_message {
     display: flex;
     flex-direction: column;
     width: 80%;
     font-size: 20px;   
+}
+.espacio_boton {
+    width: 100%;
 }
