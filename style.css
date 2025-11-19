@@ -139,3 +139,47 @@ body {
 .pink_section_article p{
     font-size: 25px;
 }
+.green_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #adf0c7;
+    width: 100%;
+}
+.green_section_form input{
+    border: solid black;
+    border-radius: 5px;
+    padding: 5%;
+}
+.green_section_form{
+    padding: 2%;
+    width: 80%;
+}
+.green_section_form_name {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10%;
+    font-size: 20px;
+}
+.green_section_form_email {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 20px;
+
+}
+.green_section_form_rol {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 20px;    
+}
+.green_section_form_message{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;   
+}

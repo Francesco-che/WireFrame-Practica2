@@ -78,5 +78,25 @@
             <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </article>
     </section>
+    <section class="green_section">
+        <form class="green_section_form">
+            <div class="green_section_form_name">
+                <label for="nombre">Nombre</label>
+                <input type="text" name:"nombre" required placeholder="Tu Nombre">
+            </div>
+            <div class="green_section_form_email">
+                <label for="email">Email</label>
+                <input type="email" name:"email" required placeholder="test@gmail.com" oninvalid="this.setCustomValidity('Porfavor, introduce un email váilido')">
+            </div>
+            <div class="green_section_form_rol">
+                <label for="rol">Rol</label>
+                <input type="text" name:"rol" required placeholder="Estudainte">
+            </div>
+            <div class="green_section_form_message">
+                <label for="mensaje">Mensaje</label>
+                <textarea name:"mensaje" rows="5" cols="130" placeholder="Tu Mensaje"></textarea>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
