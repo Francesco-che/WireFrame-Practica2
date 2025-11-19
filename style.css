@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 70px;
     align-items: center;
     background-color: white;
 }
@@ -22,6 +22,11 @@ body {
     text-decoration: none;
     color: black;
     font-size: 18px;
+    font-weight: bold;
+}
+.encabezado_hamburger_icon {
+    visibility: hidden;
+    display: none; /* esto hace que la imagen no haga "colision" con el texto*/
 }
 .text_with_image{
     width: 95%;
@@ -206,3 +211,177 @@ body {
 .espacio_boton {
     width: 100%;
 }
+.footer{
+    display: flex;
+    background-color: #e6e6e6;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    padding: 2%;
+}
+.footer_enlaces {
+    width: 30%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+.footer_enlaces a{
+    text-decoration: none;
+    color: black;    
+}
+.footer_imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 55%;
+}
+.footer img{
+    width: 6%;
+    border-radius: 100%;
+}
+/*configuracion vista movil*/
+@media (max-width: 890px) {
+            .encabezado_section {
+                padding: 0 15px;
+            }
+            .encabezado_section img {
+                width: 80px;
+                padding-left: 0;
+            }
+            .encabezado_section div {
+                width: auto;
+                display: flex;
+                align-items: center;
+            }
+            .encabezado_section div a {
+                display: none;
+            }
+            .encabezado_section .encabezado_hamburger_icon {
+                visibility: visible;
+                display: block; /*hace que vuelva a aparecer*/
+                width: 40px;
+            }
+            .text_with_image {
+                width: 100%;
+                height: auto;
+                padding: 40px 20px;
+                background-position: center;
+                align-items: center;
+                text-align: center;
+            }
+            .text_with_image_h1 {
+                width: 100%;
+            }
+            .text_with_image_h1 h1 {
+                font-size: 24px;
+            }
+            .text_with_image h2 {
+                font-size: 18px;
+            }
+            .text_with_image_links {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .blue_section {
+                width: 100%;
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+            .blue_section_image {
+                max-height: none;
+                width: 100%;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .blue_section_text {
+                padding-right: 0;
+                width: 100%;
+                text-align: left;
+            }
+
+            .purple_section {
+                width: 100%;
+                padding: 20px;
+            }
+            .purple_section_imgs {
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .purple_section_imgs img {
+                width: 45%;
+            }
+            .purple_section_table {
+                padding: 0;
+                display: block;
+                overflow-x: auto;
+            }
+            .purple_section_table table {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .pink_section {
+                flex-direction: column;
+                width: 100%;
+                padding: 40px 20px;
+                gap: 40px;
+            }
+            .pink_section_article {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .pink_section_article img {
+                position: absolute; /* "Flota" la imagen */
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                object-fit: cover; /* hace que no se deforme la imagen*/ 
+            }
+            }
+            .pink_section_article h3 {
+                font-size: 28px;
+                position: relative; /* para ponerlo por encima de la imagen, junto con z-index se le da prioridad*/
+                z-index: 1;
+            }
+            .pink_section_article p {
+                font-size: 16px;
+                position: relative;
+                z-index: 1;
+            }
+            .green_section {
+                width: 105%;
+            }
+            .green_section_form {
+                flex-direction: column;
+                gap: 20px;
+                margin: 20px auto;
+            }
+            .green_section_form_name, .green_section_form_email, .green_section_form_rol, .green_section_form_message {
+                width: 100%;
+            }
+            .green_section_form ::placeholder {
+                font-size: 18px;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            .footer_enlaces {
+                width: 100%;
+                font-size: 18px;
+                justify-content: space-around;
+            }
+            .footer_imagenes {
+                width: 100%;
+            }
+            .footer img {
+                width: 40px;
+            }
