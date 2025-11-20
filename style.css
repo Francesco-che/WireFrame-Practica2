@@ -245,9 +245,10 @@ body {
 @media (max-width: 890px) {
             .encabezado_section {
                 padding: 0 15px;
+                width: 95%;
             }
             .encabezado_section img {
-                width: 80px;
+                width: 100px;
                 padding-left: 0;
             }
             .encabezado_section div {
@@ -343,7 +344,6 @@ body {
                 z-index: 0;
                 object-fit: cover; /* hace que no se deforme la imagen*/ 
             }
-            }
             .pink_section_article h3 {
                 font-size: 28px;
                 position: relative; /* para ponerlo por encima de la imagen, junto con z-index se le da prioridad*/
@@ -367,12 +367,13 @@ body {
             }
             .green_section_form ::placeholder {
                 font-size: 18px;
-            }
+            } 
 
             .footer {
                 flex-direction: column;
                 gap: 20px;
                 text-align: center;
+                width: 100%;
             }
             .footer_enlaces {
                 width: 100%;
@@ -385,3 +386,4 @@ body {
             .footer img {
                 width: 40px;
             }
+        }
